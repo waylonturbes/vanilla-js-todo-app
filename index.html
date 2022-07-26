@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Base Meta Data -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts (from fonts.google.com) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stlyes -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Javascript -->
+    <script defer src="main.js"></script>
+    <!-- Title of app -->
+    <title>TODO: Keep on doing</title>
+  </head>
+  <body>
+    <header>
+      <h1>Test</h1>
+    </header>
+    <main>
+      <form>
+        <label class="form-control" for="todo-input">Test </label>
+        <input id="todo-input" oninput="" />
+        <button
+          onsubmit="(event) => {
+          event.preventDefault() // This prevents the page from refreshing
+          const todo = event.target.value; // this
+        }"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
