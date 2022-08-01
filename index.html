@@ -27,14 +27,16 @@
       <form>
         <label class="form-control" for="todo-input">Test </label>
         <input id="todo-input" oninput="" />
-        <button
-          onsubmit="(event) => {
+        <div class="form-row">
+          <button
+            onsubmit="(event) => {
           event.preventDefault() // This prevents the page from refreshing
           const todo = event.target.value; // this
         }"
-        >
-          Submit
-        </button>
+          >
+            Submit
+          </button>
+        </div>
       </form>
     </main>
   </body>
